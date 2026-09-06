@@ -178,4 +178,4 @@ sql-banking-analytics/
 └── SQL/
     ├── SQL_Row_Level.sql
     ├── Window_Aggregation_Functions.sql
-    └── Advance_SQL_Techniques.sql=
+    └── Advance_SQL_Techniques.sql
