@@ -1,5 +1,5 @@
 # sql-banking-analytics
-Banking Analytics project using SQL to analyze customers, accounts, balances, and transaction activity.
+A banking organization needs to monitor customer balances, transaction activity, account performance, and customer segments to identify high-value customers, dormant accounts, unusual transaction patterns, and cash-flow trends.
 # 🏦 Banking Analytics SQL Project
 
 ## 📌 Project Overview
@@ -10,6 +10,46 @@ The project demonstrates practical SQL techniques used for data analysis, report
 
 ---
 
+## 📊 Key Business Questions
+
+- Which customers have the highest total account balances?
+- Which accounts have balances above the overall average?
+- Which customer segments have the highest account balances?
+- Which accounts have never recorded a transaction?
+- Which accounts have the highest transaction activity?
+- What is the net cash flow for each account?
+- Which accounts rank highest within each customer segment?
+- Which customers own multiple accounts?
+- What are the highest and second-highest account balances?
+
+  ---
+
+## 🛠️ SQL Skills Demonstrated
+
+- SELECT, WHERE, ORDER BY
+- GROUP BY & HAVING
+- INNER JOIN & LEFT JOIN
+- Aggregate Functions
+- CASE Statements
+- NULL Handling
+- Subqueries
+- CTEs
+- Window Functions
+- ROW_NUMBER()
+- RANK()
+- DENSE_RANK()
+- NTILE()
+- LAG() & LEAD()
+- FIRST_VALUE() & LAST_VALUE()
+- Views
+- Temporary Tables
+- CTAS
+- Stored Procedures
+- Triggers
+- Date & String Functions
+  
+  ---
+  
 ## 🎯 Project Objectives
 
 The main objectives of this project are:
