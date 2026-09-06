@@ -110,7 +110,7 @@ select * from v_dormantaccount;
 
 -- TASK 9 : Create a view showing successful transactions along with customer and account details (Create View).
 
-CREATE view V_SuccessfullTransactions as
+CREATE view V_SuccessfulTransactions as
 select
 	t.transaction_id,t.transaction_date,t.transaction_amount,t.transaction_channel,t.transaction_status,
     a.account_type,
@@ -120,7 +120,7 @@ inner join accounts a on t.account_id = a.account_id
 inner join customers c on a.customer_id = c.customer_id
 where t.transaction_status = 'Success';
 
-select * from v_successfulltransactions where  transaction_channel = 'ATM';
+select * from v_successfultransactions where  transaction_channel = 'ATM';
 
 /*===================================================================================================================================
 											D) CTAS & Temp Tables
@@ -254,7 +254,7 @@ select * from transactionauditlog;
 
 delimiter //
 create trigger trg_PreventNegativeAmount
-after insert on transactions for each row
+before insert on transactions for each row
 begin
 	if new.transaction_amount <0 
     then signal sqlstate '45000'
@@ -286,7 +286,7 @@ begin
 		end if;
 end //
 delimiter ;
-drop trigger trg_updateaccountbalance;
+
 
 INSERT INTO Transactions (transaction_id, account_id, transaction_date, transaction_type, transaction_amount, transaction_channel, transaction_status, balance_after_transaction, merchant_category, description)
 VALUES
