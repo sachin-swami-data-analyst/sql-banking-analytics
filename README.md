@@ -207,6 +207,22 @@ The project demonstrates database automation using triggers for:
 - Automatically updating account balances after transactions
 
 ---
+## 💡 Key Insights
+
+The analysis of the banking dataset generated the following business insights:
+
+- The dataset contains **40 customers, 60 accounts, and 100 transactions**.
+- The total account balance across all accounts is **₹2.37 Crore**, with an average account balance of approximately **₹3.96 Lakhs**.
+- **22 accounts** have balances above the overall average account balance.
+- The **Retail customer segment** holds the highest total account balance at approximately **₹1.19 Crore**, followed by the Premium segment at approximately **₹1.07 Crore**.
+- The top customer by total account balance holds approximately **₹17.33 Lakhs** across their accounts.
+- **20 customers** own more than one account, highlighting opportunities for multi-account customer analysis.
+- Transaction analysis shows **100 transactions**, of which **89 were successful**, **8 were pending**, and **3 were failed**.
+- Deposits totaled approximately **₹16.16 Lakhs**, while withdrawals totaled approximately **₹6.61 Lakhs**, resulting in a **net deposit inflow of approximately ₹9.55 Lakhs** before considering other transaction types.
+- **20 accounts** have no recorded transactions in the dataset and can be flagged for further dormant-account or customer-engagement analysis.
+- Window functions were used to rank accounts within customer segments and identify high-value accounts.
+
+---
 
 ## 📁 Project Structure
 
